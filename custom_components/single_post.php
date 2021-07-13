@@ -35,7 +35,7 @@ class Single_Post extends \Elementor\Widget_Base
   protected function _register_controls() {
     //dit is de inhoud  tab
     $this->start_controls_section('post_selection', [
-        'label' => 'Bericht',
+        'label' => 'Post',
         'tab' => \Elementor\Controls_Manager::TAB_CONTENT
     ]);
 
@@ -43,7 +43,7 @@ class Single_Post extends \Elementor\Widget_Base
     //post wordt in post_select.php gezet bij data.name op lijn 32
     //label wordt in post_select.php gezet bij data.label op lijn 28
     $this->add_control('post', [
-        'label' => 'bericht',
+        'label' => ' Select post',
         'type' => 'wpc-post-select',
     ]);
     
@@ -52,7 +52,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Laat titel zien' ),
+				'label' => __( 'Show post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -65,7 +65,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'kleur veranderen'),
+				'label' => __( 'change title color'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => \Elementor\Scheme_Color::get_type(),
@@ -81,7 +81,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_excerpt',
 			[
-				'label' => __( 'laat beschrijving zien'),
+				'label' => __( 'Show excerpt'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -94,7 +94,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'excerpt_color',
 			[
-				'label' => __( 'kleur veranderen eerste tekst'),
+				'label' => __( 'change color excerpt'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => \Elementor\Scheme_Color::get_type(),
@@ -110,7 +110,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_content',
 			[
-				'label' => __( 'omschrijving laten zien'),
+				'label' => __( 'Show content'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -124,7 +124,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'uitgelichte afbeelding laten zien'),
+				'label' => __( 'Show thumbnail'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
