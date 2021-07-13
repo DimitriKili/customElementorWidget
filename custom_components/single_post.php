@@ -52,7 +52,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Show title' ),
+				'label' => __( 'Laat titel zien' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -65,7 +65,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'title_color',
 			[
-				'label' => __( 'change color title'),
+				'label' => __( 'kleur veranderen'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => \Elementor\Scheme_Color::get_type(),
@@ -81,7 +81,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_excerpt',
 			[
-				'label' => __( 'Show excerpt, first tekst'),
+				'label' => __( 'laat beschrijving zien'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -94,7 +94,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'excerpt_color',
 			[
-				'label' => __( 'change color first tekst'),
+				'label' => __( 'kleur veranderen eerste tekst'),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => \Elementor\Scheme_Color::get_type(),
@@ -110,7 +110,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_content',
 			[
-				'label' => __( 'Show content, second tekst'),
+				'label' => __( 'omschrijving laten zien'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
@@ -124,7 +124,7 @@ class Single_Post extends \Elementor\Widget_Base
     $this->add_control(
 			'show_thumbnail',
 			[
-				'label' => __( 'Show thumbnail'),
+				'label' => __( 'uitgelichte afbeelding laten zien'),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
 				'label_on' => __( 'Show', 'your-plugin' ),
 				'label_off' => __( 'Hide', 'your-plugin' ),
